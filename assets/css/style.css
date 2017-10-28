@@ -1,4 +1,4 @@
-/*Global*/
+/******Global******/
 /*"clear fix", keeps structure when multiple pieces are floated in a container*/
 .container:after {
 	content: " ";
@@ -22,10 +22,11 @@ h1, h2 {
 	font-family: Georgia, Times, serif;
 	color: #4aaaa5;
 }
-/*Header*/
+/******Header******/
 header {
 	background-color: #ffffff;
 	border-bottom: solid 3px #cccccc;
+	height: 50px;
 }
 
 #title {
@@ -34,7 +35,7 @@ header {
 }
 
 #title h1 {
-	margin: 12px 20px;
+	margin: 9px 12px;
 	font-size: 28px;
 	color: #ffffff;
 }
@@ -54,7 +55,22 @@ nav li {
 	margin-left: 30px;
 }
 
-/*Main Content*/
+nav a {
+	text-decoration: none;
+	color: #777777;
+}
+
+nav a:hover {
+	text-decoration: none;
+	color: #D3D3D3;
+}
+
+.current a {
+	color: #4aaaa5;
+	font-weight: bold;
+}
+
+/******Main Content******/
 .content {
 	float: left;
 	background-color: #ffffff;
@@ -81,7 +97,7 @@ nav li {
 	margin: 15px 15px 15px 30px;
 }
 
-/*contact*/
+/******contact******/
 .contact {
 	float: right;
 	background-color: #ffffff;
@@ -109,10 +125,8 @@ nav li {
 }
 
 
-/*footer*/
+/******footer******/
 footer {
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	background-color: #666666;
 	text-align: center;
@@ -126,6 +140,11 @@ footer p {
 	margin-top: 20px;
 }
 
+/*Sticky footer. Pixles = heigh of header + footer (includin borders)*/
+.main-content {
+	min-height: calc(100vh - 109px);
+	width: 100%;
+}
 
 
 
