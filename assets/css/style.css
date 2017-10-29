@@ -1,11 +1,4 @@
 /******Global******/
-/*"clear fix", keeps structure when multiple pieces are floated in a container*/
-.container:after {
-	content: " ";
-	display: table;
-	clear: both;
-}
-
 body {
 	margin: 0;
 	padding: 0;
@@ -14,130 +7,126 @@ body {
 }
 
 .container {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
+	overflow: auto;
 }
 
-h1, h2 {
-	font-family: Georgia, Times, serif;
-	color: #4aaaa5;
-}
-/******Header******/
+/*Header*/
 header {
 	background-color: #ffffff;
+	width: 100%;
 	border-bottom: solid 3px #cccccc;
-	height: 50px;
+	height: 56px;
 }
 
-#title {
+header #title {
 	float: left;
-	background: #4aaaa5;
 }
 
-#title h1 {
-	margin: 9px 12px;
-	font-size: 28px;
-	color: #ffffff;
+header h1 {
+	margin: 0;
+	padding: 10px 15px;
+	background-color: #4aaaa5;
+	color: #fff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-nav {
+header li {
+	display: inline-block;
+	margin: 5px 20px 0px 0px;
+}
+
+header nav {
 	float: right;
 }
 
-nav ul {
-	margin-top: 22px;
-	padding: 0;
-	list-style: none;
-}
-
-nav li {
-	display: inline-block;
-	margin-left: 30px;
-}
-
-nav a {
+header a {
 	text-decoration: none;
 	color: #777777;
 }
 
-nav a:hover {
-	text-decoration: none;
-	color: #D3D3D3;
-}
-
-.current a {
-	color: #4aaaa5;
+header .current a, header a:hover {
 	font-weight: bold;
+	color: #4aaaa5;
 }
 
-/******Main Content******/
-.content {
-	float: left;
+/*Main Content*/
+
+
+/*About*/
+.about {
 	background-color: #ffffff;
 	width: 650px;
-	margin-top: 30px;
+	float: left;
+	margin-top: 25px;
+	margin-right: 40px;
 }
 
-.content h2 {
-	width: 90%;
-	margin: 0 auto;
-	padding: 10px 0px;
+.about p {
+	margin: 15px;
+}
+
+.about h2 {
+	padding-bottom: 5px;
+	margin: 15px;
 	border-bottom: solid 2px #cccccc;
-}
-
-.content p {
-	width: 90%;
-	margin: 15px auto;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
 }
 
 #me-pic {
-	float: left;
-	width: 220px;
 	height: 200px;
-	margin: 15px 15px 15px 30px;
+	width: 220px;
+	float: left;
+	margin: 0px 15px 15px 15px;
 }
 
-/******contact******/
+/*Contact*/
 .contact {
-	float: right;
-	background-color: #ffffff;
 	width: 270px;
-	margin-top: 30px;
+	background-color: #ffffff;
+	/*float: right;*/
+	display: inline-block;
+	margin: 25px 0px;
 }
 
-.contact h2 {
+.contact h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
 	width: 80%;
+	margin: 15px auto;
 	text-align: center;
-	margin: 0 auto;
-	padding: 10px 0px;
 	border-bottom: solid 2px #cccccc;
-	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+.contact img {
+	height: 60px;
+	width: 60px;
 }
 
 .contact li {
-	display: inline-block;
-	margin-right: 10px;
+	display: inline;
+	list-style: none;
 }
 
-.contact li img {
-	height: 55px;
-	width: 55px;
+.icons {
+	clear: both;
 }
-
-
-/******footer******/
+/*Footer*/
 footer {
-	width: 100%;
 	background-color: #666666;
-	text-align: center;
-	border-top: solid 6px #4aaaa5;
-	height: 50px;
-	color: #b6b9b5;
-	font-size: 12px;
+	width: 100%;
+	border-top: solid 5px #4aaaa5;
+	height: 45px;
 }
 
 footer p {
-	margin-top: 20px;
+	color: #b6b9b5;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 16px;
 }
 
 /*Sticky footer. Pixles = heigh of header + footer (includin borders)*/
