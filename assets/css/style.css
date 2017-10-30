@@ -34,7 +34,7 @@ header h1 {
 
 header li {
 	display: inline-block;
-	margin: 5px 20px 0px 0px;
+	margin: 5px 0px 0px 20px;
 }
 
 header nav {
@@ -55,7 +55,7 @@ header .current a, header a:hover {
 
 
 /*About*/
-.about {
+.focus {
 	background-color: #ffffff;
 	width: 650px;
 	float: left;
@@ -63,11 +63,11 @@ header .current a, header a:hover {
 	margin-right: 40px;
 }
 
-.about p {
+.focus p {
 	margin: 15px;
 }
 
-.about h2 {
+.focus h2 {
 	padding-bottom: 5px;
 	margin: 15px;
 	border-bottom: solid 2px #cccccc;
@@ -75,14 +75,36 @@ header .current a, header a:hover {
 	color: #4aaaa5;
 }
 
-#me-pic {
+#me-pic { 
 	height: 200px;
 	width: 220px;
 	float: left;
 	margin: 0px 15px 15px 15px;
 }
 
-/*Contact*/
+/* Contact Page */
+
+.focus textarea, .focus form  {
+	margin: -10px 15px 0px 15px;
+
+}
+
+.focus textarea, .focus form input {
+	width: 600px;
+	font-size: 16px;
+	border: solid 1px #D3D3D3;
+}
+
+.button {
+	margin: 20px 15px;
+	padding: 10px 25px;
+	background-color: #4aaaa5;
+	border-style: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+/*Connect With Me*/
 .contact {
 	width: 270px;
 	background-color: #ffffff;
