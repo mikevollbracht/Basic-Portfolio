@@ -52,8 +52,6 @@ header .current a, header a:hover {
 }
 
 /*Main Content*/
-
-
 /*About*/
 .focus {
 	background-color: #ffffff;
@@ -83,7 +81,6 @@ header .current a, header a:hover {
 }
 
 /* Contact Page */
-
 .focus textarea, .focus form  {
 	margin: -10px 15px 0px 15px;
 
@@ -103,6 +100,45 @@ header .current a, header a:hover {
 	color: #fff;
 	font-size: 16px;
 }
+
+/*Portfolio*/
+.portfolio {
+	width: 620px;
+	margin: 0 auto;
+}
+.box {
+	height: 200px;
+	width: 260px;
+	margin: 5px 23px;
+	background-color: red;
+	display: inline-block;
+	clear: both;
+}
+
+.title {
+	height: 45px;
+	width: 100%;
+	background-color: #4aaaa5;
+	position: relative;
+	bottom: 65px;
+}
+
+.title h1 {
+	padding: 10px 0px;
+	text-align: center;
+	width: 100%;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 18px;
+	color: #fff;
+	z-index: 2;
+}
+
+.port-image {
+	width: 100%;
+	height: 100%;
+}
+
+
 
 /*Connect With Me*/
 .contact {
@@ -142,6 +178,7 @@ footer {
 	width: 100%;
 	border-top: solid 5px #4aaaa5;
 	height: 45px;
+	margin-top: 15px;
 }
 
 footer p {
