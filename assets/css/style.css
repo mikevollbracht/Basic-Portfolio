@@ -196,9 +196,9 @@ footer p {
 	margin-top: 16px;
 }
 
-/*Sticky footer. Pixles = heigh of header + footer (includin borders)*/
+/*Sticky footer. Pixles = heigh of header + footer (including borders)*/
 .main-content {
-	min-height: calc(100vh - 109px);
+	min-height: calc(100vh - 124px);
 	width: 100%;
 }
 
