@@ -203,5 +203,76 @@ footer p {
 	width: 100%;
 }
 
+/*Responsive*/
+@media(max-width: 650px){
+	header, #title, nav, .main-content, .container, .focus, .contact, .portfolio, footer {
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.focus p {
+		text-align: left;
+		padding-bottom: 15px;
+		margin: 0 15px;
+	}
+
+	header {
+		height: 96px;
+		padding: 0;
+		border-bottom: solid 4px #cccccc
+	}
+
+	header li {
+		margin: 0 10px;
+	}
+
+	.focus h2 {
+		padding: 10px;
+		margin: 0px 0px 15px 0px;
+	}
+	
+	
+	/*Connect with me*/ 
+	.contact ul {
+		padding: 0;
+	}
+	
+	/*Changing contact boxes*/
+	.focus textarea, .focus form input{
+		width: 90%;
+		margin: 0;	
+	}
+
+	.focus > form  {
+		margin: -8px 0px 8px 0px;
+	}
+
+	.focus textarea {
+		margin-top: -6px;
+	}
+
+	/*Footer*/
+	.contact, footer {
+		border-top: solid 5px #4aaaa5;
+	}
+
+	/*Sticky footer. Pixles = heigh of header + footer (including borders)*/
+	.main-content {
+	min-height: calc(100vh - 150px);
+	width: 100%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
 
 
